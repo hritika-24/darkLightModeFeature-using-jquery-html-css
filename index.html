@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Light Mode Feature</title>
+    <!-- jquery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+
+        span{
+            border: 2px solid black;
+            outline:3px solid white;
+            color:rgb(0, 42, 255);
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+            float: right;
+            cursor: pointer;
+            box-shadow: 0 5px 5px blue;
+        }
+        main{
+            text-align: center;
+        }
+        h1{
+            font-family: sans-serif;
+            margin-top: 50px;
+            color:purple;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Dark Light Mode Feature</h1>
+        <span class="dark-light">Dark/Light</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos sit beatae natus nostrum, aut animi illo quia dolores neque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos sit beatae natus nostrum, aut animi illo quia doloresit amet consectetur adipisicing elit. Exercitationem quos sit beatae natus nostrum, aut animi illo quia dolores neque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos sit sit amet consectetur adipisicing elit. Exercitationem quos sit beatae natus nostrum, aut animi illo quia doloresit amet consectetur adipisicing elit. Exercitationem quos sit beatae natus nostrum, aut animi illo quia dolore natus nostrum, aut animi illo quia dolores neque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos sit beatae natus nostrum, aut animi illo quia dolores neque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aut porro ut ex expedita voluptates nostrum laborum cum? Provident similique velit, nisi accusantium neque nostrum, quidem aperiam rem distinctio id quos cumque? Reprehenderit blanditiis debitis quis! Maiores reprehenderit ea tempora deserunt maxime amet non, minima ipsum ab omnis quidem repellendus.</p>
+    </main>
+
+    <script>
+        $(document).ready(function(){
+          $(".dark-light").on("click",function(){
+            $("*").toggleClass("dark");
+          })
+        })
+    </script>
+</body>
+</html>
